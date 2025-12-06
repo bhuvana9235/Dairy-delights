@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Garden Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/reserve.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="box-decoration-break: slice;">
+            <div class="container">
+                <a class="navbar-brand" href="SpiceGarden.html">
+                    <h3 style="float: right; margin-top: 0px;"  >Spice Garden</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="SpiceGarden.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item" style="margin-top: 0px; " >
+                            <a class="nav-link" href="#">
+                                <button class="book-table">Book a Table</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="com">  
+        <section class="book-table-section">
+            <div class="reservation-form-container">
+                <h1>Book a Table</h1>
+                <form class="reservation-form">
+                    <div class="form-group"><input type="text" id="name" name="name" required placeholder="Name"></div> 
+                    <div class="form-group"><input type="email" id="email" name="email" required placeholder="Email"></div> 
+                    <div class="form-group"><input type="tel" id="phone" name="phone" required placeholder="Phone"></div> 
+                    <div class="form-group"><input type="date" id="date" name="date" required></div> 
+                    <div class="form-group"><input type="time" id="time" name="time" required></div> 
+                    <div class="form-group">
+                        <select id="persons" name="persons" required>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 Persons</option>
+                            <option value="3">3 Persons</option>
+                            <option value="4">4 Persons</option>
+                            <option value="5">5 Persons</option>
+                            <option value="6">6 Persons</option>
+                            <option value="7">7 Persons</option>
+                            <option value="8">8 Persons</option>
+                        </select>
+                    </div> 
+                    <div class="form-group">
+                        <input type="text" id="reservationid" readonly required placeholder="Reservation Id">
+                    </div>
+                    <button type="button" onclick="submitReservation()" class="make-reservation-button">Make a Reservation</button>
+
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <hr style="color: gold; width: 80%; height:2px; margin: 20px auto;">  
+
+    <footer class="footer">
+        <div class="footer-row">
+            <div class="footer-column">
+                <h3>Spice Garden</h3>
+                <p class="description">Discover the exquisite flavors of our cuisine. Spice Garden is your destination for culinary excellence.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Open Hours</h3>
+                <p>Monday - Thursday: 9:00 AM - 12:00 AM</p>
+                <p>Friday - Saturday: 9:00 AM - 2:00 AM</p>
+                <p>Sunday: 9:00 AM - 2:00 AM</p>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Enter Email Address" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-row justify-content-center">
+            <p>&copy; 2024 Spice Garden. All rights reserved.</p>
+        </div> 
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/reserve.js"></script>
+</body>
+</html>

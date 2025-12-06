@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!--with help of this link can u ready-made styles -->
+</head>
+<body>
+    <!-- Header -->
+
+    <header class="bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="logo">Spice Garden</h1>
+            <nav>
+                <ul class="nav">
+                    <li ><a class="nav-link text-white" href="#home">Home</a></li>
+                    <li ><a class="nav-link text-white" href="#about">About</a></li>
+                    <li ><a class="nav-link text-white" href="menu.html">Menu</a></li>
+                    <li ><a class="nav-link text-white" href="#stories">Stories</a></li>
+                    <li ><a class="nav-link text-white" href="#contact">Contact</a></li>
+                    <li >
+                        <a class="nav-link" href="./reserve.html">
+                            <button class="book-table">Book a Table</button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section" style="background-image:url(./screenshots/caplogo5.PNG);">  
+    </section>
+
+    <!-- Dish Images Section -->
+    <section class="py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-white">
+                    <img src="./screenshots/dish1.jpg" alt="dish1" class="rounded-circle1 img-fluid">
+                    <p>Grilled Paneer with potatoes</p>
+                    <p>Panner, Potatoes, Rice, Tomatoes</p>
+                </div>
+                <div class="col-md-3 text-white">
+                    <img src="./screenshots/dish2.jpg" alt="dish2" class="rounded-circle2 img-fluid">
+                    <p>Pasta con i perperoni cruschi</p>
+                    <p>Pasta, Corn and Perproni</p>
+                </div>
+                <div class="col-md-3 text-white">
+                    <img src="./screenshots/dish3.jpg" alt="dish3" class="rounded-circle3 img-fluid">
+                    <p>Green bean casserole</p>
+                    <p>Beans, Potato, Onion and Paratha</p>
+                </div>
+                <div class="col-md-3 text-white">
+                    <img src="./screenshots/dish4.jpg" alt="dish4" class="rounded-circle4 img-fluid">
+                    <p>Fettuccine al Pomodoro</p>
+                    <p>Lettuce, Tomato, Wheat and Millets</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- about section -->
+        <section id="about" class="about-section">
+            <div class="images-container">
+                <img src="./screenshots/about1.jpg.png" alt="about" class="about-img1">
+                <img src="./screenshots/about2.jpg.png" alt="about2" class="about-img2">
+            </div>
+            <div class="text-container">
+                <h2>About Spice Garden</h2>
+                <p>At Spice Garden, we are more than just a restaurant; we are a culinary journey, a symphony of flavors, and a celebration of culture. Our passion for authentic cuisine and dedication to exceptional dining experiences have made us a beloved destination for food enthusiasts and connoisseurs alike. With a rich heritage of flavors, our dishes are carefully crafted using time-honored recipes and the finest ingredients sourced from around the world. We invite you to embark on a gastronomic adventure with us, where every meal is a story waiting to be savored.</p>
+                <p><strong>Timings:</strong> Mon - Fri 9 AM to 11 PM</p>
+                <p class="contact"> +1 978-810-3452</p>
+            </div>
+        </section>
+    
+      
+         <!-- catering section -->
+         <section id="catering" class="catering-section py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="catering-heading">Catering Services</h2>
+                <div class="row mt-2">
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-cake-candles" id="catering-icos"></i>
+                        <h4 class="catering-name">Birthday Party</h4>
+                        <p class="catering-data">Make your special day even more memorable with our catering services tailored for birthday celebrations. From delicious cakes to a wide range of cuisines, we've got you covered.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-handshake" id="catering-icos"></i>
+                        <h4 class="catering-name">Business Meetings</h4>
+                        <p class="catering-data">Elevate your corporate events with our professional catering services. We provide gourmet meals and a comfortable atmosphere for successful business meetings.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa-solid fa-gift" id="catering-icos"></i>
+                        <h4 class="catering-name">Wedding Party</h4>
+                        <p class="catering-data">Your special day deserves the finest catering. Let us create a memorable wedding feast that reflects your love story and delights your guests.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- menu section -->
+        <section id="menu" class="menu-section">
+            <div class="container text-center">
+                <h1 class=" container-fluid menu-heading">Specialties our Menu</h1>
+                <div class="row mt-2">
+                <div class="col-md-3">
+                    <img src="./screenshots//menu1.png" alt="menu1" class="img-fluid d-flex align-items-center" id="menusection-img">
+                </div>
+                <div class="card-body card-body-menu ">
+                    <h6 class="card-title">Grilled Paneer With Potatoes</h6>
+                    <p class="card-text">Paneer, Potato, Rice and Tomatoes</p>
+                    <p class="card-cost">225 INR</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+                <div class="col-md-3">
+                    <img src="./screenshots/menu2.png" alt="menu2" class="img-fluid" id="menusection-img">
+                </div>
+                <div class="card-body card-body-menu">
+                    <h5 class="card-title">
+                        Grilled Paneer with
+                        vegetables</h5>
+                    <p class="card-text">Paneer, Potato, Rice and Tomatoes</p>
+                    <p class="card-cost">275 INR</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+            </div>
+            <div class="row">
+                
+                <div class="card-body card-body-menu">
+                    <h5 class="card-title">Buttery Sautéed
+                        Mushrooms with Fresh
+                        Herbs</h5>
+                    <p class="card-text">Mushroom, Paratha, Herbs
+                        and Tomatoes</p>
+                    <p class="card-cost">275 INR</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+            <div class="col-md-3">
+                <img src="./screenshots/menu3.png" alt="menu3" class="img-fluid" id="menusection-img">
+            </div>
+                <div class="card-body card-body-menu">
+                    <div class="mycard-body ">
+                    <h5 class="card-title">Fettuccine al Pomodoro
+                    </h5>
+                    <p class="card-text">Lettuce, Tomato, Wheat and Millets</p>
+                    <p class="card-cost">325 INR</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                    
+            </div>
+            <div class="col-md-3">
+                <img src="./screenshots/menu4.png" alt="menu4" class="img-fluid"  id="menusection-img">
+    
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="./screenshots/menu5.png" alt="menu5" class="img-fluid" id="menusection-img">
+    
+                </div>
+                <div class="card-body card-body-menu">
+                    <h5 class="card-title">Pasta con i peperoni cruschi</h5>
+                    <p class="card-text">Pasta, Chorn, Perproni and Tomato Sauce</p>
+                    <p class="card-cost">350 INR</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+                <div class="col-md-3">
+                    <img src="./screenshots/menu6.png" alt="menu6" class="img-fluid" id="menusection-img">
+    
+                </div>
+                <div class="card-body card-body-menu">
+                    <h5 class="card-title">Honey dipped with Waffel dessert Honey</h5>
+                    <p class="card-text">Honey dipped with Waffel, Strawberries and Cherries</p>
+                    <p class="card-cost">300 INR</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+            </div>
+        </div>
+        </section>
+        <!-- chef section -->
+        <section id="chefs" class="py-5 bg-dark">
+            <div class="container text-center text-light">
+                <h2 class="chef-heading">Our Master Chefs</h2>
+                <div class="row mt-4">
+                    <div class="col-md-3">
+                        <img src="./screenshots/chef1.png" alt="chef1" class="master-img img-fluid">
+                        <h3 >Restaurant Owner</h3>
+                        <p>John Doe</p>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./screenshots/chef2.png"alt="chef 2" class="master-img img-fluid">
+                        <h3>Master Chef</h3>
+                        <p>Jane Smith</p>
+                        
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+        
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./screenshots/chef3.png" alt="chef3" class="master-img img-fluid">
+                        <h3>Master Chef</h3>
+                        <p>Maria Garcia</p>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="./screenshots/chef4.png" alt="chef4" class="master-img img-fluid">
+                        <h3>Master Chef</h3>
+                        <p>Jane Smith</p>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Book a Table Section -->
+     <div class="table-container" id="table-image" style="background-image: url(./screenshots/pizza1.jpg);">
+        <div class="row justify-content-center" >
+            <div class="col-md-6 form-container" id="table-card-body">
+                <div class="card mt-5">
+                    <div class="card-header text-center" id="table-header">
+                        <h2 class="table-header-heading">Book a Table</h2>
+                        <h5>Make Reservation</h5>
+                    </div>
+                    <div class="card-body" id="table-card-body">
+                        <form>
+                            <div class="row" >
+                                <div class="col-md-6">
+                            
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                </div>
+                                <div class=" col-md-6">
+                                    <label for="email"></label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="phone"></label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="date"></label>
+                                    <input type="date" class="form-control" id="date">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" col-md-6">
+                                    <label for="time"></label>
+                                    <input type="time" class="form-control" id="time">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="people"></label>
+                                    <select class="form-control" id="people">
+                                        <option>1 Person</option>
+                                        <option>2 People</option>
+                                        <option>3 People</option>
+                                        <option>4 People</option>
+                                        <option>5 People</option>
+                                        <option>6 People</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <button type="submit" class="btn btn-orange btn-block" id="Reservation-button">Make a Reservation</button>
+                                </div>
+                                <div class="col-md-6"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <!--Recent Posts-->
+    <section id="stories" class="stories-section">
+        <div class="stories-container text-center text-dark">
+          <h2 class="stories-heading">Recent posts</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card-recent" style="width: 18rem">
+                  <img src="./screenshots/post1.png" class="card-img-top rounded-0" alt="recent1"/>
+                  <div class="card-body mt-3 mb-3" id="recent-post-data">
+                    <p class="recent-post-p">september 9th 2002</p>
+                    <p  class="recent-post-p1">Exploring Flavors From Around the World</p>
+                  </div>
+                  <div class="row g-0">
+                    <div class="recent-add-button">
+                      <button class="btn btn-xs btn-warning ml-3" id="recent-sec-button">
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card-recent" style="width: 18rem">
+                  <img src="./screenshots/post2.png" class="card-img-top rounded-0" alt="recent2"/>
+                  <div class="card-body mt-3 mb-3" id="recent-post-data">
+                    <p class="recent-post-p21">Agust 28th 2023</p>
+                    <p  class="recent-post-p22">The Art of spice: A culinary journey</p>
+                  </div>
+                  <div class="row g-0">
+                    <div class="recent-add-button">
+                      <button class="btn btn-xs btn-warning ml-3" id="recent-sec-button">
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card-recent " style="width: 18rem">
+                  <img src="./screenshots/post3.png" class="card-img-top rounded-0" alt="recent3"/>
+                  <div class="card-body mt-3 mb-3"id="recent-post-data">
+                    <p  class="recent-post-p31">July 10, 2023</p>
+                    <p  class="recent-post-p1">Taste the Delicious Food in India and Europe</p>
+                  </div>
+                  <div class="row g-0">
+                    <div class="recent-add-button">
+                      <button class="btn btn-xs btn-warning ml-3" id="recent-sec-button">
+                        Add To Cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  
+      <!-- Happy Customers -->
+      <section class="testimonial-section">
+        <div class="container" >
+            <h2 class="text-center">Happy Customers</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card testimonial">
+                        <img src="./screenshots/review1.jpg" class="card-img-top" alt="customer1">
+                        <div class="card-body text-center">
+                            <p class="card-text">"Spice Garden is a culinary gem! The flavors in every dish are exceptional, and the ambiance is truly welcoming. My family and I have had countless memorable dinners here."</p>
+                            <h5 class="card-title">John Doe</h5>
+                            <p class="role">CUSTOMER</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card testimonial">
+                        <img src="./screenshots/review2.jpg" class="card-img-top" alt="customer2">
+                        <div class="card-body text-center">
+                            <p class="card-text">"I recently hosted a birthday party at Spice Garden, and it was a huge success. The catering service and the food quality were outstanding. I couldn't be happier with the experience!"</p>
+                            <h5 class="card-title">Jane Smith</h5>
+                            <p class="role">CUSTOMER</p>    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card testimonial">
+                        <img src="./screenshots/review3.jpg" class="card-img-top" alt="customer3">
+                        <div class="card-body text-center">
+                            <p class="card-text">"My wedding reception at Spice Garden was nothing short of magical. The venue, the menu, and the service exceeded our expectations. Our guests still rave about it!"</p>
+                            <h5 class="card-title">Maria Garcia</h5>
+                            <p class="role">CUSTOMER</p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- map -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14014.702312376812!2d77.21596825!3d28.63530805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd3acfea7f03%3A0x35f3c46ab097a5ed!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001%2C%20India!5e0!3m2!1sen!2sus!4v1623706896053!5m2!1sen!2sus" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-center">Contact Us</h2>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning btn-block" id="map-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <h4>Contact information</h4>
+            <div class="contact-info row">
+    
+                <div class="col-md-3">
+                    <h5>Address</h5>
+                    <p>Connaught Place, New Delhi, 110001</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Phone</h5>
+                    <a href="tel:+911234567890">+91 123-456-7890</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Email</h5>
+                    <a href="mailto:info@spicegarden.com">info@spicegarden.com</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Website</h5>
+                    <a href="http://www.spicegarden.com">spicegarden.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Spice Garden</h5>
+                    <p>Discover the exquisite flavors of our cuisine. Spice Garden is your destination for culinary excellence.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Open Hours</h5>
+                    <p>Monday - Thursday: 9:00 AM - 12:00 AM<br>
+                    Friday - Saturday: 9:00 AM - 2:00 AM<br>
+                    Sunday: 9:00 AM - 2:00 AM</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Newsletter</h5>
+                    <form class="newsletter">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Enter Email Address">
+                            <button type="submit" class="btn btn-warning" id="footer-button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2023 All rights reserved | Spice Garden</p>
+            </div>
+        </div>
+    </footer>
+    
+   </body>
+</html>

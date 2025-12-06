@@ -1,0 +1,24 @@
+{
+    "reservation": [
+      {
+        "id": "k247",
+        "reservationId": "RES2025040005",
+        "name": "Deepthi",
+        "email": "vdeepthi829@gmail.com",
+        "phone": "9344678346",
+        "date": "2025-04-08",
+        "time": "17:51",
+        "persons": "5"
+      },
+      {
+        "id": "pjwa",
+        "reservationId": "RES2025040006",
+        "name": "Deepthi",
+        "email": "vdeepthi829@gmail.com",
+        "phone": "9344678346",
+        "date": "2025-04-08",
+        "time": "22:21",
+        "persons": "1"
+      }
+    ]
+  }

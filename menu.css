@@ -1,0 +1,236 @@
+body{
+    background-color: black;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    size-adjust: auto;
+}
+
+.book-table {
+    background-color: yellow;
+    color: black;
+    margin-top: -10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    padding-right: -30px;
+}
+.book-table:hover {
+    background-color: chocolate; /* Change background color on hover */
+    color: black; /* Ensure text color remains black on hover */
+}
+
+.navbar{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: -30px;
+    transition: background-color 0.3s ease;
+    padding-right: 0;
+    
+}
+
+.navbar-brand img{
+    margin-top: 18px;
+    border-radius: 100%;
+    width: 50px;;
+    height: 50px;
+}
+
+.nav-item a {
+    color: rgb(216, 216, 95);
+    justify-content: center;
+    margin-top: 10px;
+    padding-right: -30px;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: aqua !important;
+    transition: color 0.3s ease;
+}
+
+h1{
+    color:goldenrod ;
+}
+h3{
+    padding: 25px;
+    margin-top: -25px;
+    color: goldenrod;
+    font-weight: lighter;
+    font-style: italic;
+    text-align: auto;
+}
+
+section {
+    flex: 1;
+    
+    padding-bottom: auto;
+     /* Adjust based on footer height */
+    }
+
+    .menu-section {
+        background-image: url('../screenshots/M2.jpg');  
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: black;
+        padding: 50px 500px;
+        text-align: center;
+       
+    }
+
+.menu-section h2 {
+    color: #FFAA00;
+}
+
+#categoryFilter {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#menuTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#menuTable th, #menuTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#menuTable th {
+    background-color: #FFAA00;
+    color: white;
+}
+
+#menuTable th:nth-child(4),
+#menuItemsTable td:nth-child(4) {
+
+    width: 150px;
+    max-width: 150px;
+}
+
+#menuTable input[type="number"] {
+    text-align: center;
+    width: 60px;
+    padding: 5px;
+}
+
+
+#menuTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#menuTable tr:nth-child(odd) {
+    background-color: #d8bb82;
+    color: white;
+}
+
+#menuTable tr:hover {
+    background-color: #FFAA00;
+}
+
+.footer {
+    background-color: black;
+    box-shadow: #ffbb33;
+    color:#c9b470;
+    padding: 20px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: auto;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column .description {
+    color: lightgrey;
+}
+
+
+
+.footer .social-links .fab {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    /* border: 1px solid white; */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer .social-links .fab:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.footer form {
+    display: flex;
+    align-items: center;
+}
+
+.footer input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex: 1;
+}
+
+.subscribe-btn{
+    display: inline-block;
+        background-color: #ffa500; /* Light orange background color */
+        color: #000000; /* Black text color */
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+       
+
+}
+.subscribe-btn:hover{
+background-color: #ffbb33;
+}
+.footer {
+    background-color: black;
+    color: lightgrey;
+    padding: 20px;
+}
+
+/* .footer-row:last-child {
+    text-align: center;
+    flex: 100%;
+} */
+
+.footer-row:last-child p {
+    text-align: center;
+    margin: 0;
+    color: lightgrey;
+}
+
+.quantity-input::-webkit-inner-spin-button, 
+.quantity-input::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+

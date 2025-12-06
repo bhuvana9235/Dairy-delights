@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="box-decoration-break: slice;">
+            <div class="container">
+                <a class="navbar-brand" href="SpiceGarden.html">
+                    <h3 style="float: right; margin-top: 0px;"  >Spice Garden</h3>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="SpiceGarden.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item" style="margin-top: 0px; " >
+                            <a class="nav-link" href="reserve.html">
+                                <button class="book-table">Book a Table</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>    
+
+            <div class="order-container">
+        <!-- Order Details Section -->
+        <section class="order-details">
+            <div class="form">
+
+                <section style="color: goldenrod;width: 15px;"><label>Order Id:</label>
+                    <input type="text" id="orderId" readonly></section>
+            
+            <label>Customer Name:</label>
+            <input type="text"  id="customerName" required placeholder="Enter your name"> 
+            <label>Email Id:</label>
+            <input type="email" id="emailId" required placeholder="Enter your email">
+            <label>Contact Number:</label>
+            <input type="number" id="contactNumber" required placeholder="Enter your contact number">
+            <label>Order Date:</label>
+            <input type="datetime" id="orderDateandtime" >
+            <label>Address:</label>
+            <input type="text" id="address" required>
+            <button onclick="validateForm()" type="button" class="btn btn-primary">Validate</button>
+        </div>
+        </section>
+        
+
+        
+        <!-- Order Items Section -->
+       <!-- Order Items Section -->
+       <section class="order-items">
+        <table id="orderItemsTable">
+            <thead>
+                <tr>
+                    <th>Category Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price (INR)</th>
+                    <th>Item Quantity</th>
+                    <th>Subtotal (INR)</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="orderItemsContainer">
+                <!-- Order items will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </section>
+    
+    </div>
+    
+
+
+        <!-- Order Summary Section -->
+        <section class="order-summary">
+            <p>Total Amount (INR): <span id="totalAmount">0</span></p>
+            <button onclick="submitOrder()">Submit Order</button>
+
+        </section>
+    
+    
+        <hr style="color: gold; width: 80%; height:2px; margin: 20px auto;">  
+        
+
+    <footer class="footer">
+        <div class="footer-row">
+            <div class="footer-column">
+                <h3>Spice Garden</h3>
+                <p class="description">Discover the exquisite flavors of our cuisine. Spice Garden is your destination for culinary excellence.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Open Hours</h3>
+                <p>Monday - Thursday: 9:00 AM - 12:00 AM</p>
+                <p>Friday - Saturday: 9:00 AM - 2:00 AM</p>
+                <p>Sunday: 9:00 AM - 2:00 AM</p>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Enter Email Address" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-row justify-content-center">
+            <p>&copy; 2024 Spice Garden. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <script src="../js/order.js"></script>
+</body>
+</html>
